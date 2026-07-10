@@ -8,8 +8,8 @@
 
     shellAliases = {
       btw = "echo i use nixos btw";
-      nrs = "sudo nixos-rebuild switch --flake /etc/nixos#sample";
-      nrst = "sudo nixos-rebuild switch --flake /etc/nixos#sample --show-trace";
+      nrs = "sudo nixos-rebuild switch --flake ~/nixos-config#sample";
+      nrst = "sudo nixos-rebuild switch --flake ~/nixos-config#sample --show-trace";
       ncg = "nix-collect-garbage -d";
     };
   };
