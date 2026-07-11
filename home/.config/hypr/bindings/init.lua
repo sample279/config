@@ -1,0 +1,8 @@
+require("bindings.applications")
+require("bindings.windows")
+require("bindings.workspaces")
+require("bindings.groups")
+require("bindings.monitors")
+require("bindings.media")
+require("bindings.system")
+require("bindings.mouse")

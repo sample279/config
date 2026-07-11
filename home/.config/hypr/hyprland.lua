@@ -1,10 +1,6 @@
 -- Configuration
-require("monitors")
+require("config")
 require("env")
-require("looknfeel")
-require("layout")
-require("input")
-require("misc")
 
 -- Window Rules
 require("windows")
