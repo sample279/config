@@ -9,10 +9,10 @@ local apps = desktop.apps
 hl.bind(mod .. " + RETURN", hl.dsp.exec_cmd(apps.terminal))
 
 -- Browser
-hl.bind(mod .. " + SHIFT + F", hl.dsp.exec_cmd(apps.fileManager))
+hl.bind(mod .. " + SHIFT + E", hl.dsp.exec_cmd(apps.fileManager))
 
 -- File Manager
-hl.bind(mod .. " + SHIFT + Z", hl.dsp.exec_cmd(apps.browser))
+hl.bind(mod .. " + SHIFT + B", hl.dsp.exec_cmd(apps.browser))
 
 -- Launcher
 -- hl.bind(mod .. " + SPACE", hl.dsp.exec_cmd(apps.laucher))
