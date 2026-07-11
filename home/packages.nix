@@ -18,6 +18,7 @@
     neovim
     protonplus
     quickshell
+    qt6.qtdeclarative
     ripgrep
     tldr
     unrar
