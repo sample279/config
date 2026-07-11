@@ -1,10 +1,16 @@
+-- Configuration
 require("monitors")
-require("keybinds")
-require("autostart")
 require("env")
 require("looknfeel")
 require("layout")
-require("windows")
-require("misc")
 require("input")
-require("apps")
+require("misc")
+
+-- Window Rules
+require("windows")
+
+-- Keybindings
+require("keybinds")
+
+-- Startup
+require("autostart")
