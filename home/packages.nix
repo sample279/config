@@ -3,7 +3,6 @@
 {
   # List of packages to install for the user
   home.packages = with pkgs; [
-    bash-completion
     bat
     btop-cuda
     cava
@@ -12,7 +11,6 @@
     eza
     fastfetch
     fd
-    fzf
     lazygit
     librewolf
     localsend
@@ -27,6 +25,5 @@
     vesktop
     wget
     wiremix
-    zoxide
   ];
 }

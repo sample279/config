@@ -14,7 +14,17 @@
     };
   };
 
-  home.packages = [
-    pkgs.bash-completion
+  programs.fzf = {
+      enable = true;
+      enableBashIntegration = true;
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
+  home.packages = with pkgs; [
+    bash-completion
   ];
 }
