@@ -1,2 +1,5 @@
 -- Extra autostart processes.
--- o.launch_on_start("my-service")
+-- Example:
+-- hl.on("hyprland.start", function()
+--     hl.exec_cmd("my-service")
+-- end)
