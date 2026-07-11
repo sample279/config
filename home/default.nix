@@ -2,11 +2,13 @@
 
 {
   imports = [
-    ./packages.nix # User packages
+    ./packages.nix
     ./shell.nix
     ./git.nix
     ./starship.nix
     ./kitty.nix
+    ./font.nix
+    ./hyprland.nix
   ];
 
   home = {

@@ -1,0 +1,8 @@
+require("apps.browser")
+require("apps.steam")
+require("apps.terminals")
+require("apps.hyprshot")
+require("apps.localsend")
+require("apps.pip")
+require("apps.system")
+require("apps.typora")
