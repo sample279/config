@@ -11,6 +11,9 @@
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config#sample";
       nrst = "sudo nixos-rebuild switch --flake ~/nixos-config#sample --show-trace";
       ncg = "nix-collect-garbage -d";
+      n = "nvim .";
+      ls = "eza -lh --group-directories-first --icons=auto";
+      ff = "fzf --preview 'bat --style=numbers --color=always {}'";
     };
   };
 
