@@ -11,6 +11,7 @@
     eza
     fastfetch
     fd
+    jq
     lazygit
     librewolf
     localsend
