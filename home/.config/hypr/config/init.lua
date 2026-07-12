@@ -1,5 +1,5 @@
 require("config.monitors")
 require("config.input")
 require("config.layout")
-require("config.looknfeel")
+require("config.appearance")
 require("config.misc")
