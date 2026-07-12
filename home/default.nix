@@ -9,6 +9,7 @@
     ./kitty.nix
     ./font.nix
     ./hyprland.nix
+    ./quickshell.nix
   ];
 
   home = {
