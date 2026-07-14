@@ -12,7 +12,7 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, ... }: {
+  outputs = inputs@{ self, nixpkgs, ... }: {
     nixosConfigurations.sample = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
