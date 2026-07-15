@@ -22,7 +22,6 @@
     krita
     lazygit
     lazydocker
-    librewolf
     localsend
     man
     mpv
@@ -41,6 +40,5 @@
     wiremix
     yazi
     yt-dlp
-
   ];
 }
