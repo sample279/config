@@ -36,7 +36,6 @@
     unrar
     unzip
     vesktop
-    wget
     yazi
     yt-dlp
   ];
