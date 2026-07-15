@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   # List of packages to install for the user
@@ -8,6 +8,7 @@
     btop-cuda
     curl
     dust
+    emacs
     ente-auth
     evince
     eza
@@ -15,6 +16,7 @@
     fd
     gnome-calculator
     imv
+    inputs.zen-browser.packages.${pkgs.system}.default
     jq
     kitty
     krita
@@ -39,5 +41,6 @@
     wiremix
     yazi
     yt-dlp
+
   ];
 }

@@ -7,6 +7,7 @@
     ./shell.nix
     ./git.nix
     ./font.nix
+    ./overrides.nix
   ];
 
   home = {
