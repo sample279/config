@@ -4,7 +4,6 @@
     gcc
     gnome-disk-utility
     gnome-themes-extra
-    nwg-look
     xdg-desktop-portal-gtk
     xdg-user-dirs
     xdg-terminal-exec
