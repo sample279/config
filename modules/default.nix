@@ -9,11 +9,12 @@
     ./locale.nix
     ./network.nix
     ./packages.nix
-    ./sddm.nix
+    ./noctalia-greeter.nix
     ./services.nix
     ./settings.nix
     ./users.nix
-    ./hyprland.nix
+    ./niri.nix
+    ./noctalia.nix
     ./steam.nix
     ./nvidia.nix
   ];

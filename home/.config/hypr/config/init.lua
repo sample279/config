@@ -1,5 +1,0 @@
-require("config.monitors")
-require("config.input")
-require("config.layout")
-require("config.appearance")
-require("config.misc")

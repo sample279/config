@@ -8,7 +8,7 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
-  networking.hostName = "sample";
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
   networking.enableIPv6 = false;
 }
