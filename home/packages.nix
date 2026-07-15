@@ -37,7 +37,6 @@
     unzip
     vesktop
     wget
-    wiremix
     yazi
     yt-dlp
   ];
