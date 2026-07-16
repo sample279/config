@@ -8,6 +8,7 @@
     btop-cuda
     cmake
     curl
+    direnv
     dust
     emacs-pgtk
     ente-auth
