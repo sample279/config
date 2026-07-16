@@ -1,9 +1,12 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     caligula
+    cmake
     gcc
+    gnumake
     gnome-disk-utility
     gnome-themes-extra
+    libvterm
     xdg-desktop-portal-gtk
     xdg-user-dirs
     xdg-terminal-exec
