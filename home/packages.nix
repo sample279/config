@@ -6,6 +6,7 @@
     aria2
     bat
     btop-cuda
+    cmake
     curl
     dust
     emacs-pgtk
