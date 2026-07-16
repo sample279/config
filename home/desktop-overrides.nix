@@ -14,7 +14,6 @@
       categories = [ "Development" "TextEditor" ];
 
       startupNotify = true;
-      startupWMClass = "Emacs";
     };
 
     xdg.desktopEntries.emacsclient = {
