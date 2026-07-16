@@ -25,12 +25,14 @@
     lazygit
     lazydocker
     localsend
+    lutris
     man
     mpv
     nautilus
     neovim
     pgadmin4
     protonplus
+    pywalfox-native
     ripgrep
     rar
     starship
