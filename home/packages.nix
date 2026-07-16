@@ -8,7 +8,7 @@
     btop-cuda
     curl
     dust
-    emacs
+    emacs-pgtk
     ente-auth
     evince
     eza
