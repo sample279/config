@@ -30,15 +30,12 @@
     pgadmin4
     protonplus
     ripgrep
-    rar
     starship
     tldr
     typora
-    unrar
     unzip
     vesktop
     yazi
     yt-dlp
-    zip
   ];
 }
