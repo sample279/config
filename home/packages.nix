@@ -30,6 +30,7 @@
     pgadmin4
     protonplus
     ripgrep
+    rar
     starship
     tldr
     typora
@@ -38,5 +39,6 @@
     vesktop
     yazi
     yt-dlp
+    zip
   ];
 }
