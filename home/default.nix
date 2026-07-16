@@ -8,6 +8,7 @@
     ./git.nix
     ./font.nix
     ./desktop-overrides.nix
+    ./firefox.nix
   ];
 
   home = {

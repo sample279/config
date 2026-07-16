@@ -16,7 +16,6 @@
     eza
     fastfetch
     fd
-    firefox
     gnome-calculator
     imv
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
