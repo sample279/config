@@ -6,6 +6,7 @@
     gnumake
     gnome-disk-utility
     gnome-themes-extra
+    libtool
     libvterm
     xdg-desktop-portal-gtk
     xdg-user-dirs
