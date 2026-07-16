@@ -5,7 +5,7 @@
       genericName = "Text Editor";
       comment = "Edit text";
 
-      exec = "emacsclient -c -a \"\" %F";
+      exec = "emacsclient -c %F";
 
       terminal = false;
       type = "Application";
