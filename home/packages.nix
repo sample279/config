@@ -29,6 +29,7 @@
     mpv
     nautilus
     neovim
+    opencode
     pgadmin4
     protonplus
     pywalfox-native

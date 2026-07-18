@@ -9,6 +9,7 @@
     ./font.nix
     ./desktop-overrides.nix
     ./firefox.nix
+    ./homepage.nix
   ];
 
   home = {
