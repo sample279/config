@@ -9,7 +9,7 @@
     libtool
     libvterm
     nixd
-    nixfmt-rfc-style
+    nixfmt
     xdg-desktop-portal-gtk
     xdg-user-dirs
     xdg-terminal-exec
