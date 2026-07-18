@@ -8,6 +8,8 @@
     gnome-themes-extra
     libtool
     libvterm
+    nixd
+    nixfmt-rfc-style
     xdg-desktop-portal-gtk
     xdg-user-dirs
     xdg-terminal-exec
