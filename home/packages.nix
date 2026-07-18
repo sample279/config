@@ -39,6 +39,7 @@
     starship
     tldr
     typora
+    ungoogled-chromium
     unzip
     vesktop
     yazi
