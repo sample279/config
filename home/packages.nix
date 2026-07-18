@@ -6,6 +6,7 @@
     aria2
     bat
     btop-cuda
+    cliamp
     cmake
     curl
     direnv
