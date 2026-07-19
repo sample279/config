@@ -13,9 +13,15 @@
       ncg = "nix-collect-garbage -d";
       ls = "eza -lh --group-directories-first --icons=auto";
       ff = "fzf --preview 'bat --style=numbers --color=always {}'";
-      ec="nohup emacsclient -c -n >/dev/null 2>&1 &";
       nv="nvim";
     };
+
+    initExtra = ''
+      ec() {
+        nohup emacsclient -c -n "$@" >/dev/null 2>&1 &
+        exit
+      }
+    '';
   };
 
   programs.fzf = {
