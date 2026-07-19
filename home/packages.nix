@@ -3,6 +3,7 @@
 {
   # List of packages to install for the user
   home.packages = with pkgs; [
+    air
     aria2
     bat
     btop-cuda
