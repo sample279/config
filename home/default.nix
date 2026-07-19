@@ -10,6 +10,7 @@
     ./desktop-overrides.nix
     ./firefox.nix
     ./homepage.nix
+    ./thumnailer.nix
   ];
 
   home = {

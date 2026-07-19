@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # List of packages to install for the user
@@ -17,6 +17,8 @@
     eza
     fastfetch
     fd
+    ffmpeg-headless
+    ffmpegthumbnailer
     gnome-calculator
     imv
     jq
