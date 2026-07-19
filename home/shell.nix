@@ -14,6 +14,7 @@
       n = "nvim .";
       ls = "eza -lh --group-directories-first --icons=auto";
       ff = "fzf --preview 'bat --style=numbers --color=always {}'";
+      emacs = "emacsclient -c";
     };
   };
 
