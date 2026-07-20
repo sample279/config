@@ -40,6 +40,7 @@
     ripgrep
     rar
     starship
+    tmux
     tldr
     typora
     ungoogled-chromium
