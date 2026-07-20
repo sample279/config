@@ -4,7 +4,9 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
-    bashrcExtra = "";
+    bashrcExtra = ''
+      eval "$(direnv hook bash)"
+    '';
 
     shellAliases = {
       btw = "echo i use nixos btw";

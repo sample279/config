@@ -11,6 +11,7 @@
     ./firefox.nix
     ./homepage.nix
     ./thumnailer.nix
+    ./direnv.nix
   ];
 
   home = {
