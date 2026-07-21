@@ -22,6 +22,7 @@
     gnome-calculator
     go
     gopls
+    go-migrate
     sqlc
     imv
     jq
