@@ -10,7 +10,7 @@
     libvterm
     nixd
     nixfmt
-    pgadmin4
+    pgadmin4-desktopmode
     xdg-desktop-portal-gtk
     xdg-user-dirs
     xdg-terminal-exec
