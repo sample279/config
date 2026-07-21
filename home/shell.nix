@@ -17,6 +17,7 @@
       ff = "fzf --preview 'bat --style=numbers --color=always {}'";
       emacs = "emacsclient -c & disown";
       nv = "nvim";
+      pg = "pgadmin4 & disown";
     };
   };
 
