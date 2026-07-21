@@ -29,7 +29,6 @@
     localsend
     lutris
     man
-    go-migrate
     mpv
     nautilus
     neovim
