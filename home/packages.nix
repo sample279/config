@@ -20,6 +20,9 @@
     ffmpeg-headless
     ffmpegthumbnailer
     gnome-calculator
+    go
+    gopls
+    sqlc
     imv
     jq
     kitty
