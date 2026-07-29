@@ -11,7 +11,6 @@
     nixd
     nixfmt
     pgadmin4-desktopmode
-    xdg-desktop-portal-gtk
     xdg-user-dirs
     xdg-terminal-exec
     xwayland-satellite
