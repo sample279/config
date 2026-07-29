@@ -3,6 +3,7 @@
 {
   # List of packages to install for the user
   home.packages = with pkgs; [
+    adw-gtk3
     air
     aria2
     bat
@@ -49,6 +50,8 @@
     typora
     unzip
     vesktop
+    wineWow64Packages.stable
+    winetricks
     yazi
     yt-dlp
   ];
