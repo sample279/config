@@ -44,7 +44,6 @@
     pywalfox-native
     ripgrep
     rar
-    starship
     tmux
     tldr
     typora
