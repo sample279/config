@@ -22,7 +22,9 @@
     gnome-calculator
     go
     gopls
-    go-migrate
+    (go-migrate.overrideAttrs (old: {
+        tags = [ "postgres" ];
+    }))
     sqlc
     imv
     jq
@@ -45,7 +47,6 @@
     tmux
     tldr
     typora
-    ungoogled-chromium
     unzip
     vesktop
     yazi

@@ -12,6 +12,7 @@
     ./homepage.nix
     ./thumnailer.nix
     ./direnv.nix
+    ./chromium.nix
   ];
 
   home = {
