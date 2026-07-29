@@ -50,8 +50,6 @@
     typora
     unzip
     vesktop
-    wineWow64Packages.stable
-    winetricks
     yazi
     yt-dlp
   ];
