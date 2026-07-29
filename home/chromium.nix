@@ -13,7 +13,7 @@ in
 {
   programs.chromium = {
     enable = true;
-    package = pkgs.ungoogled-chromium;
+    package = pkgs.ungoogled-chromium.override { enableWideVine = true; };
 
     commandLineArgs = [
       "--ozone-platform=wayland"
