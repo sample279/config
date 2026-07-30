@@ -27,6 +27,7 @@
     (go-migrate.overrideAttrs (old: {
         tags = [ "postgres" ];
     }))
+    gpu-screen-recorder
     sqlc
     imv
     jq
