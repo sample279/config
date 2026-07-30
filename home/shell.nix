@@ -21,6 +21,7 @@
       emacs = "emacsclient -c & disown";
       nv = "nvim";
       pg = "pgadmin4";
+      a = "alias | bat -l bash";
     };
   };
 
