@@ -13,6 +13,8 @@
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config#sample";
       nrst = "sudo nixos-rebuild switch --flake ~/nixos-config#sample --show-trace";
       ncg = "nix-collect-garbage -d";
+      nru = "nix flake update ~/nixos-config && nrs";
+      nrup= "nix flake update nixpkgs --flake ~/nixos-config && nrs";
       ls = "eza -lh --group-directories-first --icons=auto";
       ff = "fzf --preview 'bat --style=numbers --color=always {}'";
       emacs = "emacsclient -c & disown";
