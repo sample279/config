@@ -12,7 +12,8 @@
       btw = "echo i use nixos btw";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config#sample";
       nrst = "sudo nixos-rebuild switch --flake ~/nixos-config#sample --show-trace";
-      ncg = "nix-collect-garbage -d";
+      ncg = "sudo nix-collect-garbage -d";
+      nso = "sudo nix store optimise";
       nru = "nix flake update ~/nixos-config && nrs";
       nrup= "nix flake update nixpkgs --flake ~/nixos-config && nrs";
       ls = "eza -lh --group-directories-first --icons=auto";
