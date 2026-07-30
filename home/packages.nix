@@ -11,6 +11,7 @@
     cliamp
     cmake
     curl
+    (discord.override { withVencord = true; })
     dust
     emacs-pgtk
     ente-auth
@@ -48,7 +49,6 @@
     tldr
     typora
     unzip
-    vesktop
     yazi
     yt-dlp
   ];
