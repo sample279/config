@@ -9,6 +9,7 @@
     ./locale.nix
     ./network.nix
     ./packages.nix
+    ./portals.nix
     ./noctalia-greeter.nix
     ./services.nix
     ./settings.nix
