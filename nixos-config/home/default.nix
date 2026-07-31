@@ -7,7 +7,7 @@
     ./shell.nix
     ./git.nix
     ./font.nix
-    ./desktop-overrides.nix
+    ./desktop.nix
     ./firefox.nix
     ./homepage.nix
     ./thumbnailer.nix
