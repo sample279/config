@@ -5,7 +5,7 @@ My NixOS system configuration and dotfiles, managed in a single repository.
 - **`nixos-config/`** — NixOS flake with Home Manager ([Niri](https://github.com/YaLTeR/niri) compositor, [Noctalia v5](https://github.com/noctalia-dev/noctalia) desktop shell)
 - **`dotfiles/`** — application configs managed with [GNU Stow](https://www.gnu.org/software/stow/), symlinked into `~`
 
-The system config history was imported from the original `nixos-config` repository via `git subtree`, so this repo's full history is preserved under the `nixos-config/` prefix.
+The system config history was imported from the original [`nixos-config`](https://github.com/sample279/nixos-config) repository via `git subtree`, so this repo's full history is preserved under the `nixos-config/` prefix.
 
 ## Layout
 
