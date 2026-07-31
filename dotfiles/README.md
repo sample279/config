@@ -17,8 +17,8 @@ Application configs managed with [GNU Stow](https://www.gnu.org/software/stow/).
 | `lazygit` | `~/.config/lazygit/` (config, noctalia theme) |
 | `menus` | `~/.config/menus/` (application menus) |
 | `mpv` | `~/.config/mpv/` (config, scripts, modernz theme) |
-| `niri` | `~/.config/niri/config.kdl` (window manager) |
-| `noctalia` | `~/.config/noctalia/` (desktop shell settings) |
+| `niri` | `~/.config/niri/config.kdl` ([window manager](https://github.com/YaLTeR/niri)) |
+| `noctalia` | `~/.config/noctalia/` ([desktop shell v5](https://github.com/noctalia-dev/noctalia) settings) |
 | `nvtop` | `~/.config/nvtop/nvtop.colors` |
 | `nwg-look` | `~/.config/nwg-look/config` |
 | `opencode` | `~/.config/opencode/` (config, themes; see below) |
