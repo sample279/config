@@ -1,6 +1,32 @@
-{ ... }:
+{ pkgs, lib, ... }:
 
+let
+  icons = [
+    {
+      name = "github";
+      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github.svg";
+      hash = "sha256-zfuC/xTIwkhOrLqdIR2GzQyZPJM4VcrSsDYzQU+hDds=";
+    }
+    {
+      name = "opencode";
+      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/opencode.svg";
+      hash = "sha256-Xus6XxTbvMwDERKW7P080FzJiEQVDU+dd7qSGEeVM4A=";
+    }
+    {
+      name = "youtube-music";
+      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/youtube-music.svg";
+      hash = "sha256-PZK9hQapa1ZvHKmVCWQhBy7d7wl6ydULUOrLctM9leQ=";
+    }
+  ];
+in
 {
+  xdg.dataFile = builtins.listToAttrs (map
+    ({ name, url, hash }: {
+      name = "icons/hicolor/256x256/apps/${name}.svg";
+      value.source = pkgs.fetchurl { inherit url hash; };
+    })
+    icons);
+
   xdg.desktopEntries.emacs = {
     name = "Emacs";
     genericName = "Text Editor";
