@@ -17,6 +17,11 @@ let
       url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/youtube-music.svg";
       hash = "sha256-PZK9hQapa1ZvHKmVCWQhBy7d7wl6ydULUOrLctM9leQ=";
     }
+    {
+      name = "whatsapp";
+      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/whatsapp.svg";
+      hash = "sha256-Yp/4FGnBIAoAw85w2Cmuj6pIcvpPeG2tiQ1klmaV/UI=";
+    }
   ];
 in
 {
@@ -77,6 +82,19 @@ in
     startupNotify = true;
     settings = {
       StartupWMClass = "chrome-github.com__-Default";
+    };
+  };
+
+  xdg.desktopEntries.whatsapp = {
+    name = "WhatsApp";
+    comment = "Send and receive messages";
+    exec = "chromium --profile-directory=Default --app=https://web.whatsapp.com";
+    icon = "whatsapp";
+    terminal = false;
+    categories = [ "Network" "InstantMessaging" ];
+    startupNotify = true;
+    settings = {
+      StartupWMClass = "chrome-web.whatsapp.com__-Default";
     };
   };
 
