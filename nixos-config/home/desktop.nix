@@ -79,4 +79,37 @@ in
       StartupWMClass = "chrome-github.com__-Default";
     };
   };
+
+  xdg.desktopEntries.btop = {
+    name = "btop";
+    genericName = "System Monitor";
+    comment = "Resource monitor that shows usage and stats for processor, memory, disks, network and processes";
+    icon = "btop";
+    exec = "kitty --app-id=btop-float -e btop";
+    terminal = false;
+    categories = [ "System" "Monitor" "ConsoleOnly" ];
+  };
+
+  xdg.desktopEntries.LocalSend = {
+    name = "LocalSend";
+    genericName = "An open source cross-platform alternative to AirDrop";
+    icon = "localsend";
+    exec = "env GTK_CSD=0 localsend_app %U";
+    terminal = false;
+    categories = [ "GTK" "FileTransfer" "Utility" ];
+    startupNotify = true;
+    settings = {
+      StartupWMClass = "localsend_app";
+    };
+  };
+
+  xdg.desktopEntries.yazi = {
+    name = "Yazi";
+    comment = "Blazing fast terminal file manager written in Rust, based on async I/O";
+    icon = "yazi";
+    exec = "kitty --app-id=yazi-float -e yazi %f";
+    terminal = false;
+    categories = [ "System" "FileManager" "FileTools" "ConsoleOnly" ];
+    mimeType = [ "inode/directory" ];
+  };
 }
