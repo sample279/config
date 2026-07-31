@@ -1,6 +1,8 @@
 # nixos-config
 
-This repository contains my personal NixOS system configuration, managed using **Nix flakes** and **Home Manager** using **Niri** as the compositor and **Noctalia** as the desktop shell.
+NixOS system configuration, managed with **Nix flakes** and **Home Manager**, using **Niri** as the compositor and **Noctalia** as the desktop shell.
+
+This directory is part of the parent [`config`](../README.md) repository, which also holds the Stow-managed dotfiles.
 
 ## Structure
 
@@ -10,19 +12,19 @@ This repository contains my personal NixOS system configuration, managed using *
 ├── flake.lock
 ├── configuration.nix
 ├── hardware-configuration.nix
-├── README.md
 │
 ├── modules/                      # System modules
 │   ├── niri.nix
 │   ├── noctalia.nix
 │   ├── nvidia.nix
-│   ├── sddm.nix
+│   ├── bootloader.nix
 │   └── ...
 │
 └── home/                         # Home Manager configuration
     ├── default.nix
     ├── git.nix
     ├── packages.nix
+    ├── shell.nix
     └── ...
 ```
 
@@ -31,3 +33,5 @@ This repository contains my personal NixOS system configuration, managed using *
 ```bash
 sudo nixos-rebuild switch --flake ~/config/nixos-config#sample
 ```
+
+See the [parent README](../README.md) for the available aliases.

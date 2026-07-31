@@ -10,7 +10,7 @@
     ./desktop-overrides.nix
     ./firefox.nix
     ./homepage.nix
-    ./thumnailer.nix
+    ./thumbnailer.nix
     ./direnv.nix
     ./chromium.nix
   ];
