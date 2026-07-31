@@ -47,6 +47,7 @@
     pywalfox-native
     ripgrep
     rar
+    rnote
     tmux
     tldr
     typora
