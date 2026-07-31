@@ -23,7 +23,7 @@
       pg = "pgadmin4";
       a = "alias | bat -l bash";
       cfg = "cd ~/config";
-      stowall = "cd ~/config/dotfiles && stow -t ~ . && cd -";
+      stowall = "cd ~/config/dotfiles && stow -t ~ * && cd -";
     };
   };
 
