@@ -29,5 +29,5 @@ This repository contains my personal NixOS system configuration, managed using *
 ## Usage
 
 ```bash
-sudo nixos-rebuild switch --flake ~/nixos-config#sample
+sudo nixos-rebuild switch --flake ~/config/nixos-config#sample
 ```

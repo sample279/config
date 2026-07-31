@@ -29,6 +29,7 @@
     }))
     gpu-screen-recorder
     sqlc
+    stow
     imv
     jq
     kitty
