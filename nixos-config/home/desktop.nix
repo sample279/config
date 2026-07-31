@@ -40,4 +40,17 @@
     categories = [ "Development" "Utility" ];
     startupNotify = true;
   };
+
+  xdg.desktopEntries.github = {
+    name = "GitHub";
+    comment = "Build software together";
+    exec = "chromium --profile-directory=Default --app=https://github.com";
+    icon = "github";
+    terminal = false;
+    categories = [ "Network" "Development" ];
+    startupNotify = true;
+    settings = {
+      StartupWMClass = "chrome-github.com__-Default";
+    };
+  };
 }
