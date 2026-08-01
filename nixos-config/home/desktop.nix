@@ -4,8 +4,8 @@ let
   icons = [
     {
       name = "github";
-      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github.svg";
-      hash = "sha256-zfuC/xTIwkhOrLqdIR2GzQyZPJM4VcrSsDYzQU+hDds=";
+      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github-light.svg";
+      hash = "sha256-/z0Yv50GoifM/VVpdLL880T4Mz/lKGOlJcvV5D/eoAQ=";
     }
     {
       name = "opencode";
