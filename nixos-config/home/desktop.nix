@@ -22,6 +22,11 @@ let
       url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/whatsapp.svg";
       hash = "sha256-Yp/4FGnBIAoAw85w2Cmuj6pIcvpPeG2tiQ1klmaV/UI=";
     }
+    {
+      name = "enteauth";
+      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ente-auth.svg";
+      hash = "sha256-bW/IU1QbC6NwKZkVrvX9GnGPIa97ExOUo/9EDr99ITM=";
+    }
   ];
 in
 {
