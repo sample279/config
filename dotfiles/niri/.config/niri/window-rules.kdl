@@ -1,0 +1,112 @@
+// Window rules let you adjust behavior for individual windows.
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Window-Rules
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    match app-id=r#"firefox"# title="^Picture-in-Picture$"
+    open-floating true
+
+    default-column-width { fixed 550; }
+    default-window-height { fixed 350; }
+
+    default-floating-position x=16 y=16 relative-to="top-right"
+}
+
+// Open steam as floating by default.
+window-rule {
+    match app-id=r#"steam$"# title=r#"^(Steam|Steam Settings|Players|Game Servers|Recordings & Screenshots|Add Non-Steam Game|System Report|Steam Runtime System Information|Steam - Browser)$"#
+    open-floating true
+
+    default-column-width { fixed 1100; }
+    default-window-height { fixed 700; }
+}
+
+// Open steam friends list as floating by default.
+window-rule {
+    match app-id=r#"steam$"# title="^Friends List$"
+    open-floating true
+
+    default-column-width { fixed 360; }
+    default-window-height { fixed 700; }
+}
+
+// Slids up steam notification on the bottom right of the screen
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+
+    open-floating true
+    open-focused false
+
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+// Open steam chat as floating
+window-rule {
+    match app-id="^steam$" title="(dEstroy|Ducks|Ryxen|Fab|3xtra|4DoorsMoreWhores|AdiAmbassador|Arki|Bunny Bonzai|Charon IV|compulsive thrower|coporate majdoor|Crow|Daredevil|Demiurge|dRAGON|eL pheNom|Game - |godZ|JARV1S #Nonchalance|Jitkola|Jxhn|La PaganiNi|LadiesCumFirst|lucid|Neha|NotAGAM|ROLEX|S1mpLy|ShadeSlayer777|Sheavenky|E C C E N T R I C #80 FPS)"
+    open-floating true
+    default-column-width { fixed 1100; }
+    default-window-height { fixed 700; }
+}
+
+// Open btop as floating
+window-rule {
+    match app-id="^btop-float$"
+    open-floating true
+    default-column-width { fixed 1100; }
+    default-window-height { fixed 670; }
+}
+
+// Open calculator as floating
+window-rule {
+  match app-id="org.gnome.Calculator" title="Calculator"
+  open-floating true
+  default-column-width { fixed 360; }
+  default-window-height { fixed 500; }
+}
+
+// Open calculator as floating
+window-rule {
+  match app-id="gnome-disks" title="Disks"
+  open-floating true
+  default-column-width { fixed 1100; }
+  default-window-height { fixed 700; }
+}
+
+
+// Open localsend as floating
+window-rule {
+  match app-id="localsend_app" title="LocalSend"
+  open-floating true
+  default-column-width { fixed 1100; }
+  default-window-height { fixed 700; }
+}
+
+// Open imv as floating
+window-rule {
+  match app-id="^imv$"
+  open-floating true
+  default-column-width { fixed 1100; }
+  default-window-height { fixed 700; }
+}
+
+// Open mpv as floating
+window-rule {
+  match app-id="mpv"
+  open-floating true
+  default-column-width { fixed 1100; }
+  default-window-height { fixed 700; }
+}
+
+// Open yazi as floating
+window-rule {
+    match app-id="^yazi-float$"
+    open-floating true
+    default-column-width { fixed 1100; }
+    default-window-height { fixed 700; }
+}
+
+layer-rule {
+  match namespace="^noctalia-backdrop"
+  place-within-backdrop true
+}
