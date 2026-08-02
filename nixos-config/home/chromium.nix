@@ -32,6 +32,7 @@ in
       (fetchCrx { id = "pkehgijcmpdhfbdbbnkijodmdjhbjlgp"; sha256 = "sha256-r7/6OKSQ1D/45WoTsKS0+95ch7BtU9kImNnn4vzQj0A="; version = "2026.6.16"; }) # Privacy Badger
       (fetchCrx { id = "nomnklagbgmgghhjidfhnoelnjfndfpd"; sha256 = "sha256-wrZaHUvdTNJP78mc6hrHOLjk+JEWtDGHmwaICAGJ0KE="; version = "0.2.4"; }) # Canvas Blocker - Fingerprint Protect
       (fetchCrx { id = "lckanjgmijmafbedllaakclkaicjfmnk"; sha256 = "sha256-rMFzGyrQCJ85p93PDHIy7TU329AZuOjBvuzoeO1Yoxo="; version = "1.26.0"; }) # ClearURLs
+      (fetchCrx { id = "clngdbkpkpeebahjckkjfobafhncgmne"; sha256 = "sha256-mST2glhYqJuYce1SDxnqHdSIaVsGJ/m5CTcE8Tlib2E="; version = "2.4.5"; }) # Stylus
       (fetchCrx { id = "jplgfhpmjnbigmhklmmbgecoobifkmpa"; sha256 = "sha256-s4H8dj67EkZ77UuPspBQ0td7a4aLnqr35vqRxrkuAUM="; version = "1.3.5"; }) # Proton VPN: Fast & Secure
       (fetchCrx { id = "gebbhagfogifgggkldgodflihgfeippi"; sha256 = "sha256-0ZO+7AY5dcy1AOXPtZ9sSPcj9Wl2RQkE9oOFZq7ESqM="; version = "4.0.4"; }) # Return YouTube Dislike
       (fetchCrx { id = "ddkjiahejlhfcafbddmgiahcphecmpfh"; sha256 = "sha256-ap5qHNULryLU6Ynjw1JcSRvunmDJNvdzHsca3Baokgg="; version = "2026.723.1724"; }) # uBlock Origin Lite
