@@ -9,6 +9,6 @@ binds {
     Mod+Ctrl+V hotkey-overlay-title="Open Clipboard: Noctalia" { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Mod+Ctrl+Slash hotkey-overlay-title="Open wallhaven browser: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
     Mod+Shift+N hotkey-overlay-title="Open Notes: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
-    Mod+Shift+Z   hotkey-overlay-title="Open Browser: Firefox" { spawn "firefox"; }
+    Mod+Shift+Z hotkey-overlay-title="Open Browser: Chromium" { spawn "chromium"; }
     Mod+Shift+E hotkey-overlay-title="Open file manager: Nautilus" { spawn "nautilus"; }
 }

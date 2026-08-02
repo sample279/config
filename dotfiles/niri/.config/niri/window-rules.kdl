@@ -2,17 +2,6 @@
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Window-Rules
 
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    match app-id=r#"firefox"# title="^Picture-in-Picture$"
-    open-floating true
-
-    default-column-width { fixed 550; }
-    default-window-height { fixed 350; }
-
-    default-floating-position x=16 y=16 relative-to="top-right"
-}
-
 // Open steam as floating by default.
 window-rule {
     match app-id=r#"steam$"# title=r#"^(Steam|Steam Settings|Players|Game Servers|Recordings & Screenshots|Add Non-Steam Game|System Report|Steam Runtime System Information|Steam - Browser)$"#
