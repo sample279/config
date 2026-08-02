@@ -44,7 +44,6 @@
     neovim
     opencode
     protonplus
-    pywalfox-native
     ripgrep
     rar
     rnote

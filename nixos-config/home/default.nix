@@ -8,7 +8,6 @@
     ./git.nix
     ./font.nix
     ./desktop.nix
-    ./firefox.nix
     ./homepage.nix
     ./thumbnailer.nix
     ./direnv.nix
