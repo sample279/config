@@ -46,7 +46,6 @@
     protonplus
     ripgrep
     rar
-    rnote
     tmux
     tldr
     typora
