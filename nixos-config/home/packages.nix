@@ -5,11 +5,13 @@
   home.packages = with pkgs; [
     adw-gtk3
     air
+    ani-cli
     aria2
     bat
     btop-cuda
     cliamp
     cmake
+    codecrafters-cli
     curl
     (discord.override { withVencord = true; })
     dust
