@@ -14,6 +14,6 @@
     xdg-user-dirs
     xdg-terminal-exec
     xwayland-satellite
-    yaru-theme
+    papirus-icon-theme
   ];
 }
