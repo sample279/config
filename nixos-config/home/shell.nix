@@ -19,7 +19,7 @@
       ncg = "sudo nix-collect-garbage -d";
       nrs = "sudo nixos-rebuild switch --flake ~/config/nixos-config#sample";
       nrst = "sudo nixos-rebuild switch --flake ~/config/nixos-config#sample --show-trace";
-      nru = "nix flake update ~/config/nixos-config && nrs";
+      nru = "nix flake update --flake ~/config/nixos-config && nrs";
       nrup= "nix flake update nixpkgs --flake ~/config/nixos-config && nrs";
       nso = "sudo nix store optimise";
       nv = "nvim";
