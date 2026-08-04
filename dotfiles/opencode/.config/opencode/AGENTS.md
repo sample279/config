@@ -1,0 +1,65 @@
+# AGENTS.md
+
+Personal NixOS config + dotfiles in a single repo at `~/config`
+(remote: `git@github.com:sample279/config.git`, branch `main`). This file is
+loaded globally by opencode from `~/.config/opencode/AGENTS.md`.
+
+## Repo layout
+- `nixos-config/` — NixOS flake (nixpkgs `nixos-unstable`), host
+  `nixosConfigurations.sample`
+  - `flake.nix` (inputs: nixpkgs, home-manager, noctalia, noctalia-greeter)
+  - `configuration.nix` + `hardware-configuration.nix`
+  - `modules/` — system modules (niri, noctalia, noctalia-greeter, nvidia,
+    audio, docker, steam, packages, ...)
+  - `home/` — Home Manager modules (shell, git, packages, chromium, desktop, ...)
+- `dotfiles/` — GNU Stow packages, one dir per app, symlinked into `~`. Edits
+  apply immediately (live symlinks). See `dotfiles/README.md` for the package
+  list and exceptions.
+
+## Commands
+- Rebuild (needs sudo — the user must run it; the agent cannot):
+  `nrs` (switch), `nrst` (with `--show-trace`)
+- Build-only verification (no sudo, safe for the agent):
+  `nixos-rebuild build --flake ~/config/nixos-config#sample`
+  (run from `~/config/nixos-config`)
+- `nru` = `nix flake update --flake ~/config/nixos-config && nrs`
+  `nrup` = update only `nixpkgs` + rebuild
+- `stowall` = restow all dotfiles from `~/config/dotfiles`;
+  add a package with `stow --adopt -t ~ <pkg>`
+- `niri validate` — validates the niri KDL config
+
+## Conventions
+- Conventional Commits (`feat:`, `fix:`, `chore:`, `refactor:`, `docs:`,
+  `feat!:`) — the history was rewritten once to this style; keep it
+  consistent, one logical change per commit.
+- Commit and push only when the user asks. `origin/main` is the source of truth.
+- Never touch `backup/pre-rewrite` (the pre-rewrite backup) or the backup
+  bundle in `/tmp/opencode/`; do not rewrite history without asking.
+
+## Gotchas / constraints
+- The agent has no sudo (password required) — use `build` for verification,
+  leave the `switch` to the user.
+- `nix flake update` takes input names as positional args (e.g. `nixpkgs`),
+  not paths — always pass `--flake ~/config/nixos-config`.
+- `python3` is not installed on this system.
+- `home/chromium.nix` adds extensions via `fetchCrx { id, sha256, version }`
+  (Chrome Web Store CRX). Verify the hash by downloading the crx, then run
+  `nixos-rebuild build` before committing.
+- Noctalia/matugen regenerate theme files across dotfiles (e.g. `matugen.json`,
+  `noctalia.*`, `lazy-lock.json`) — unexpected uncommitted diffs may be
+  legitimate regenerations; confirm with the user before reverting.
+- niri: only `config.kdl` is tracked; `noctalia.kdl` is generated and
+  untracked.
+- opencode package: only `opencode.jsonc`, `package.json`, `package-lock.json`,
+  `themes/`, and `AGENTS.md` are tracked; `node_modules/` stays untracked.
+  Note: as of now the opencode package files under `~/.config/opencode` are
+  real files, not stow symlinks — the live config and the repo can drift.
+- Two package files: `modules/packages.nix` = system packages,
+  `home/packages.nix` = user (home-manager) packages.
+
+## Verification checklist
+1. `git status` — know what's changed before acting.
+2. After Nix changes: `nixos-rebuild build --flake ~/config/nixos-config#sample`
+   succeeds.
+3. After niri KDL changes: `niri validate`.
+4. Commit with a Conventional Commit message; push only when asked.
