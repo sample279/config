@@ -26,6 +26,11 @@
     gnome-calculator
     go
     gopls
+    jdk21
+    jdt-language-server
+    google-java-format
+    maven
+    spring-boot-cli
     (go-migrate.overrideAttrs (old: {
         tags = [ "postgres" ];
     }))
