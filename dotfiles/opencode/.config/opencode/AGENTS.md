@@ -17,11 +17,12 @@ loaded globally by opencode from `~/.config/opencode/AGENTS.md`.
   list and exceptions.
 
 ## Commands
-- Rebuild (needs sudo — the user must run it; the agent cannot):
-  `nrs` (switch), `nrst` (with `--show-trace`)
-- Build-only verification (no sudo, safe for the agent):
-  `nixos-rebuild build --flake ~/config/nixos-config#sample`
-  (run from `~/config/nixos-config`)
+- Building is done ONLY by the user — the agent never runs `nixos-rebuild`,
+  `nrs`, or `nrst`. After the agent changes Nix or dotfiles, ask the user to
+  build.
+  - `nrs` (switch), `nrst` (with `--show-trace`) — needs sudo
+  - `nixos-rebuild build --flake ~/config/nixos-config#sample` — build-only,
+    no sudo (run from `~/config/nixos-config`)
 - `nru` = `nix flake update --flake ~/config/nixos-config && nrs`
   `nrup` = update only `nixpkgs` + rebuild
 - `stowall` = restow all dotfiles from `~/config/dotfiles`;
@@ -37,14 +38,14 @@ loaded globally by opencode from `~/.config/opencode/AGENTS.md`.
   bundle in `/tmp/opencode/`; do not rewrite history without asking.
 
 ## Gotchas / constraints
-- The agent has no sudo (password required) — use `build` for verification,
-  leave the `switch` to the user.
+- The agent has no sudo (password required) and never runs builds — the user
+  does all building and verification.
 - `nix flake update` takes input names as positional args (e.g. `nixpkgs`),
   not paths — always pass `--flake ~/config/nixos-config`.
 - `python3` is not installed on this system.
-- `home/chromium.nix` adds extensions via `fetchCrx { id, sha256, version }`
-  (Chrome Web Store CRX). Verify the hash by downloading the crx, then run
-  `nixos-rebuild build` before committing.
+-   `home/chromium.nix` adds extensions via `fetchCrx { id, sha256, version }`
+  (Chrome Web Store CRX). Verify the hash by downloading the crx, then ask the
+  user to run `nixos-rebuild build` before committing.
 - Noctalia/matugen regenerate theme files across dotfiles (e.g. `matugen.json`,
   `noctalia.*`, `lazy-lock.json`) — unexpected uncommitted diffs may be
   legitimate regenerations; confirm with the user before reverting.
@@ -59,7 +60,7 @@ loaded globally by opencode from `~/.config/opencode/AGENTS.md`.
 
 ## Verification checklist
 1. `git status` — know what's changed before acting.
-2. After Nix changes: `nixos-rebuild build --flake ~/config/nixos-config#sample`
-   succeeds.
+2. After Nix changes: ask the user to build
+   (`nixos-rebuild build --flake ~/config/nixos-config#sample` or `nrs`).
 3. After niri KDL changes: `niri validate`.
 4. Commit with a Conventional Commit message; push only when asked.
