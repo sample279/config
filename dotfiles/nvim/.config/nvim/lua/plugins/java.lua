@@ -1,5 +1,4 @@
 return {
-  { import = "lazyvim.plugins.extras.lang.java" },
   {
     "mfussenegger/nvim-jdtls",
     opts = function(_, opts)
