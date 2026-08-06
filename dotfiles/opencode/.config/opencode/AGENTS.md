@@ -58,6 +58,9 @@ loaded globally by opencode from `~/.config/opencode/AGENTS.md`.
   real files, not stow symlinks — the live config and the repo can drift.
 - Two package files: `modules/packages.nix` = system packages,
   `home/packages.nix` = user (home-manager) packages.
+- Use canonical nixpkgs package names, not legacy/deprecated aliases (e.g.
+  `protonvpn-gui` → `proton-vpn`). Nixpkgs emits rename warnings at eval —
+  heed them and switch to the canonical name.
 
 ## Verification checklist
 1. `git status` — know what's changed before acting.
