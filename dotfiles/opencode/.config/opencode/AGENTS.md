@@ -33,7 +33,8 @@ loaded globally by opencode from `~/.config/opencode/AGENTS.md`.
 - Conventional Commits (`feat:`, `fix:`, `chore:`, `refactor:`, `docs:`,
   `feat!:`) — the history was rewritten once to this style; keep it
   consistent, one logical change per commit.
-- Commit and push only when the user asks. `origin/main` is the source of truth.
+- Always commit and push after making changes; do not wait for the user to
+  ask. `origin/main` is the source of truth.
 - Never touch `backup/pre-rewrite` (the pre-rewrite backup) or the backup
   bundle in `/tmp/opencode/`; do not rewrite history without asking.
 
@@ -63,4 +64,4 @@ loaded globally by opencode from `~/.config/opencode/AGENTS.md`.
 2. After Nix changes: ask the user to build
    (`nixos-rebuild build --flake ~/config/nixos-config#sample` or `nrs`).
 3. After niri KDL changes: `niri validate`.
-4. Commit with a Conventional Commit message; push only when asked.
+4. Commit with a Conventional Commit message and push.
