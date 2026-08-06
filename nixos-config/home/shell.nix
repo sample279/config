@@ -25,6 +25,7 @@
       ls = "eza -lh --group-directories-first --icons=auto";
       dust = "dust -s -r -x";
       ff = "fzf --preview 'bat --style=numbers --color=always {}'";
+      ya = "yazi";
 
       # Editors & tools
       nv = "nvim";
