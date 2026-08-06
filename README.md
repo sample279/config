@@ -1,15 +1,14 @@
 # config
 
-My NixOS system configuration and dotfiles, managed in a single repository.
+Personal NixOS system configuration and dotfiles, managed in a single repository.
 
-- **`nixos-config/`** — NixOS flake with Home Manager ([Niri](https://github.com/YaLTeR/niri) compositor, [Noctalia v5](https://github.com/noctalia-dev/noctalia) desktop shell)
-- **`dotfiles/`** — application configs managed with [GNU Stow](https://www.gnu.org/software/stow/), symlinked into `~`
+[NixOS](https://nixos.org/) (`nixos-unstable`) · [Home Manager](https://github.com/nix-community/home-manager) · [Niri](https://github.com/YaLTeR/niri) (Wayland compositor) · [Noctalia v5](https://github.com/noctalia-dev/noctalia) (desktop shell) · [GNU Stow](https://www.gnu.org/software/stow/) dotfiles
 
 ## Layout
 
 ```text
 .
-├── nixos-config/              # NixOS flake
+├── nixos-config/              # NixOS flake (host: sample)
 │   ├── flake.nix
 │   ├── configuration.nix
 │   ├── hardware-configuration.nix
@@ -25,8 +24,6 @@ My NixOS system configuration and dotfiles, managed in a single repository.
 
 ## Usage
 
-### System
-
 ```bash
 sudo nixos-rebuild switch --flake ~/config/nixos-config#sample
 ```
@@ -35,33 +32,20 @@ Aliases (defined in `home/shell.nix`):
 
 | alias | command |
 |-------|---------|
-| `nrs` | rebuild with the flake |
-| `nrst` | rebuild with `--show-trace` |
+| `nrs` | `sudo nixos-rebuild switch` (with the flake) |
+| `nrst` | `nrs` with `--show-trace` |
 | `nru` | `nix flake update` + rebuild |
 | `nrup` | update only `nixpkgs` + rebuild |
-| `ncg` | `nix-collect-garbage -d` |
-| `nso` | `nix store optimise` |
+| `ncg` | `sudo nix-collect-garbage -d` |
+| `nso` | `sudo nix store optimise` |
+| `stowall` | restow all dotfiles (symlink farm) |
+| `cfg` | `cd ~/config` |
 
-### Dotfiles
+Dotfiles are symlinked into `~` — edit in place, changes apply immediately. See `dotfiles/README.md` for the package list.
 
-Files are symlinked from `~` into `dotfiles/`, so edit them in place — changes apply immediately and are tracked by git.
-
-```bash
-stowall   # restow all packages (symlink farm)
-cfg       # cd ~/config
-```
-
-Adding a new package:
-
-```bash
-mkdir -p ~/config/dotfiles/<app>/.config
-cp -r ~/.config/<app> ~/config/dotfiles/<app>/.config/
-cd ~/config/dotfiles && stow --adopt -t ~ <app>
-```
-
-Then commit the changes in `~/config`.
+Validate the niri config: `niri validate`
 
 ## Requirements
 
 - NixOS with flakes enabled
-- `stow` for the dotfiles (installed via Home Manager)
+- `stow` (installed via Home Manager)
