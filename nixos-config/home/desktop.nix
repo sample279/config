@@ -27,6 +27,16 @@ let
       url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/ente-auth.svg";
       hash = "sha256-bW/IU1QbC6NwKZkVrvX9GnGPIa97ExOUo/9EDr99ITM=";
     }
+    {
+      name = "gmail";
+      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gmail.svg";
+      hash = "sha256-3rk6+CjZExIr4mLNwHxcq2tWCajoLIhbfYQbc1+uFn4=";
+    }
+    {
+      name = "protonmail";
+      url = "https://raw.githubusercontent.com/ente-io/ente/main/mobile/apps/auth/assets/custom-icons/icons/proton_mail.svg";
+      hash = "sha256-cHJIZ/pJ3tLMFvB38xMV5F+JzQvErRD3BlQrIT9uvvo=";
+    }
   ];
 in
 {
@@ -100,6 +110,32 @@ in
     startupNotify = true;
     settings = {
       StartupWMClass = "chrome-web.whatsapp.com__-Default";
+    };
+  };
+
+  xdg.desktopEntries.gmail = {
+    name = "Gmail";
+    comment = "Email that's intuitive, efficient, and useful";
+    exec = "chromium --profile-directory=Default --app=https://mail.google.com";
+    icon = "gmail";
+    terminal = false;
+    categories = [ "Network" "Email" "Office" ];
+    startupNotify = true;
+    settings = {
+      StartupWMClass = "chrome-mail.google.com__-Default";
+    };
+  };
+
+  xdg.desktopEntries.protonmail = {
+    name = "Proton Mail";
+    comment = "Secure, private email";
+    exec = "chromium --profile-directory=Default --app=https://mail.proton.me";
+    icon = "protonmail";
+    terminal = false;
+    categories = [ "Network" "Email" "Office" ];
+    startupNotify = true;
+    settings = {
+      StartupWMClass = "chrome-mail.proton.me__-Default";
     };
   };
 
