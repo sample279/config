@@ -37,6 +37,11 @@ let
       url = "https://raw.githubusercontent.com/ente-io/ente/main/mobile/apps/auth/assets/custom-icons/icons/proton_mail.svg";
       hash = "sha256-cHJIZ/pJ3tLMFvB38xMV5F+JzQvErRD3BlQrIT9uvvo=";
     }
+    {
+      name = "protonvpn";
+      url = "https://raw.githubusercontent.com/ente-io/ente/main/mobile/apps/auth/assets/custom-icons/icons/proton_vpn.svg";
+      hash = "sha256-HHG1cS/pvrFgWHFDHV2WfXWqw+MAzXZk7pfD9OcXAnc=";
+    }
   ];
 in
 {
@@ -136,6 +141,18 @@ in
     startupNotify = true;
     settings = {
       StartupWMClass = "chrome-mail.proton.me__-Default";
+    };
+  };
+
+  xdg.desktopEntries."proton.vpn.app.gtk" = {
+    name = "Proton VPN";
+    comment = "Proton VPN GUI client";
+    exec = "protonvpn-app";
+    icon = "protonvpn";
+    terminal = false;
+    categories = [ "Network" ];
+    settings = {
+      StartupWMClass = ".protonvpn-app-wrapped";
     };
   };
 
