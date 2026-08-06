@@ -9,22 +9,31 @@
     '';
 
     shellAliases = {
-      a = "alias | bat -l bash";
-      btw = "echo i use nixos btw";
-      cfg = "cd ~/config";
-      dust = "dust -s -r -x";
-      emacs = "emacsclient -c & disown";
-      ff = "fzf --preview 'bat --style=numbers --color=always {}'";
-      ls = "eza -lh --group-directories-first --icons=auto";
-      ncg = "sudo nix-collect-garbage -d";
+      # Nix management
+      nu = "nix flake update --flake ~/config/nixos-config";
+      nup = "nix flake update nixpkgs --flake ~/config/nixos-config";
       nrs = "sudo nixos-rebuild switch --flake ~/config/nixos-config#sample";
       nrst = "sudo nixos-rebuild switch --flake ~/config/nixos-config#sample --show-trace";
-      nru = "nix flake update --flake ~/config/nixos-config && nrs";
-      nrup= "nix flake update nixpkgs --flake ~/config/nixos-config && nrs";
+      nru = "nu && nrs";
+      nrup = "nup && nrs";
+      ncg = "sudo nix-collect-garbage -d";
       nso = "sudo nix store optimise";
-      nv = "nvim";
-      pg = "pgadmin4";
+
+      # Files & navigation
+      cfg = "cd ~/config";
       stowall = "cd ~/config/dotfiles && stow -t ~ * && cd -";
+      ls = "eza -lh --group-directories-first --icons=auto";
+      dust = "dust -s -r -x";
+      ff = "fzf --preview 'bat --style=numbers --color=always {}'";
+
+      # Editors & tools
+      nv = "nvim";
+      emacs = "emacsclient -c & disown";
+      pg = "pgadmin4";
+
+      # Misc
+      a = "alias | bat -l bash";
+      btw = "echo i use nixos btw";
     };
   };
 
