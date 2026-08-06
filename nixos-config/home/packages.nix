@@ -45,8 +45,8 @@
     nautilus
     neovim
     opencode
+    proton-vpn
     protonplus
-    protonvpn-gui
     ripgrep
     rar
     tmux
