@@ -46,6 +46,7 @@
     neovim
     opencode
     protonplus
+    protonvpn-gui
     ripgrep
     rar
     tmux
