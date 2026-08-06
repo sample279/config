@@ -90,3 +90,8 @@
                '(kdl . ("https://github.com/tree-sitter-grammars/tree-sitter-kdl"))))
 
 (set-popup-rule! "^\\*doom:vterm-popup:" :size 1.0 :select t :quit nil :ttl nil)
+
+(after! evil
+  (setq evil-escape-key-sequence "jk"
+        evil-escape-delay 0.2)
+  (evil-escape-mode 1))
