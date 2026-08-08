@@ -14,6 +14,6 @@
     xdg-user-dirs
     xdg-terminal-exec
     xwayland-satellite
-    papirus-icon-theme
+    (papirus-icon-theme.override { color = "yaru"; })
   ];
 }
