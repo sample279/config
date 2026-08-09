@@ -11,6 +11,7 @@
     ./homepage.nix
     ./thumbnailer.nix
     ./direnv.nix
+    ./freesmlauncher.nix
     ./chromium.nix
   ];
 

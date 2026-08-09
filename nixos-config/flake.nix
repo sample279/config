@@ -19,6 +19,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    freesmlauncher = {
+        url = "github:FreesmTeam/FreesmLauncher";
+        inputs.nixpkgs.follows = "nixpkgs";
+        };
   };
 
   outputs = inputs@{ self, nixpkgs, ... }: {
