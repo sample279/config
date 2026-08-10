@@ -9,6 +9,7 @@
     aria2
     bat
     btop-cuda
+    clang-tools
     cliamp
     cmake
     codecrafters-cli
