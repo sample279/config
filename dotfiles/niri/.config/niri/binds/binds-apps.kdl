@@ -11,6 +11,7 @@ binds {
     Mod+Shift+S hotkey-overlay-title="Open MPVPaper Picker: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/mpvpaper:picker"; }
     Mod+Shift+N hotkey-overlay-title="Open Notes: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
     Mod+Shift+Z hotkey-overlay-title="Open Browser: Chromium" { spawn "chromium"; }
+    Mod+Shift+Alt+Z hotkey-overlay-title="Open Private Window: Chromium" { spawn-sh "chromium --incognito"; }
     Mod+Shift+E hotkey-overlay-title="Open File Manager: Nautilus" { spawn "nautilus"; }
     Mod+Shift+A hotkey-overlay-title="Open ChatGPT: Chromium" { spawn-sh "chromium --app=https://chatgpt.com"; }
 }
