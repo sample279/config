@@ -54,3 +54,4 @@
 
 (package! tldr)
 (package! kdl-mode)
+(package! key-chord)

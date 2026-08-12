@@ -92,6 +92,12 @@
 (set-popup-rule! "^\\*doom:vterm-popup:" :size 1.0 :select t :quit nil :ttl nil)
 
 (after! evil
-  (setq evil-escape-key-sequence "jk"
-        evil-escape-delay 0.2)
-  (evil-escape-mode 1))
+  (setq evil-escape-key-sequence nil)
+  (evil-escape-mode -1))
+
+(use-package! key-chord
+  :after evil
+  :config
+  (key-chord-mode 1)
+  (key-chord-define evil-insert-state-map "jk" #'newline)
+  (key-chord-define evil-replace-state-map "jk" #'newline))
