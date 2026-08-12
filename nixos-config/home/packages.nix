@@ -43,6 +43,7 @@
     lutris
     man
     mpv
+    mpvpaper
     nautilus
     neovim
     opencode
