@@ -7,7 +7,8 @@ binds {
     Mod+S hotkey-overlay-title="Open Control-Center: Noctalia" { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Comma hotkey-overlay-title="Open Settings: Noctalia" { spawn-sh "noctalia msg settings-toggle"; }
     Mod+Ctrl+V hotkey-overlay-title="Open Clipboard: Noctalia" { spawn-sh "noctalia msg panel-toggle clipboard"; }
-    Mod+Ctrl+Slash hotkey-overlay-title="Open Wallhaven Browser: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
+    Mod+Shift+W hotkey-overlay-title="Open Wallhaven Browser: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
+    Mod+Shift+S hotkey-overlay-title="Open MPVPaper Picker: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/mpvpaper:picker"; }
     Mod+Shift+N hotkey-overlay-title="Open Notes: Noctalia" { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
     Mod+Shift+Z hotkey-overlay-title="Open Browser: Chromium" { spawn "chromium"; }
     Mod+Shift+E hotkey-overlay-title="Open File Manager: Nautilus" { spawn "nautilus"; }
