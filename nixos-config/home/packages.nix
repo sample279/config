@@ -11,7 +11,6 @@
     btop-cuda
     clang-tools
     cliamp
-    cmake
     codecrafters-cli
     curl
     (discord.override { withVencord = true; })
