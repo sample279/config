@@ -36,7 +36,7 @@ in
       (fetchCrx { id = "gebbhagfogifgggkldgodflihgfeippi"; sha256 = "sha256-0ZO+7AY5dcy1AOXPtZ9sSPcj9Wl2RQkE9oOFZq7ESqM="; version = "4.0.4"; }) # Return YouTube Dislike
       (fetchCrx { id = "ddkjiahejlhfcafbddmgiahcphecmpfh"; sha256 = "sha256-ap5qHNULryLU6Ynjw1JcSRvunmDJNvdzHsca3Baokgg="; version = "2026.723.1724"; }) # uBlock Origin Lite
       (fetchCrx { id = "khncfooichmfjbepaaaebmommgaepoid"; sha256 = "sha256-hiKyaY3/CLquJqjDY49STmbfwSVi5yhpSBn6HvLigCM="; version = "1.6.9"; }) # Unhook - Remove YouTube Recommended & Shorts
-      (fetchCrx { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; sha256 = "sha256-VYf+K2qZRhAcoN3nxu/nanVcXuW21uY9/EjH9zbNtP8="; version = "6.1.0"; }) # SponsorBlock
+      (fetchCrx { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; sha256 = "sha256-VYf+K2qZRhAcoN3nxu/nanVcXuW21uY9/EjH9zbNtP8="; version = "6.1.6"; }) # SponsorBlock
       (fetchCrx { id = "nffaoalbilbmmfgbnbgppjihopabppdk"; sha256 = "sha256-bJUxLYTCx+UCbpxZW0+By4NfK2oiYxWbhy+766a0dUY="; version = "0.10.2"; }) # Video Speed Controller
       (fetchCrx { id = "jghecgabfgfdldnmbfkhmffcabddioke"; sha256 = "sha256-dSLS7Km/5gbb07xEYACAOs9EBfvbJGlqx4qwFkKV95U="; version = "2.4.0"; }) # Volume Master
     ];
