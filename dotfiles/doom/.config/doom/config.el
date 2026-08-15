@@ -99,5 +99,5 @@
   :after evil
   :config
   (key-chord-mode 1)
-  (key-chord-define evil-insert-state-map "jk" #'newline)
-  (key-chord-define evil-replace-state-map "jk" #'newline))
+  (key-chord-define evil-insert-state-map "jk" #'evil-normal-state)
+  (key-chord-define evil-replace-state-map "jk" #'evil-normal-state))
