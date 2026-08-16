@@ -8,11 +8,6 @@ let
       hash = "sha256-/z0Yv50GoifM/VVpdLL880T4Mz/lKGOlJcvV5D/eoAQ=";
     }
     {
-      name = "opencode";
-      url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/opencode.svg";
-      hash = "sha256-Xus6XxTbvMwDERKW7P080FzJiEQVDU+dd7qSGEeVM4A=";
-    }
-    {
       name = "youtube-music";
       url = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/youtube-music.svg";
       hash = "sha256-PZK9hQapa1ZvHKmVCWQhBy7d7wl6ydULUOrLctM9leQ=";
@@ -80,16 +75,6 @@ in
     settings = {
       StartupWMClass = "chrome-music.youtube.com__-Default";
     };
-  };
-
-  xdg.desktopEntries.opencode = {
-    name = "OpenCode";
-    comment = "AI-powered coding assistant";
-    exec = "kitty --app-id=opencode -e opencode";
-    icon = "opencode";
-    terminal = false;
-    categories = [ "Development" "Utility" ];
-    startupNotify = true;
   };
 
   xdg.desktopEntries.github = {

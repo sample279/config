@@ -45,15 +45,6 @@ window-rule {
   default-window-height { fixed 500; }
 }
 
-// Open calculator as floating
-window-rule {
-  match app-id="gnome-disks" title="Disks"
-  open-floating true
-  default-column-width { fixed 1100; }
-  default-window-height { fixed 700; }
-}
-
-
 // Open localsend as floating
 window-rule {
   match app-id="localsend_app" title="LocalSend"

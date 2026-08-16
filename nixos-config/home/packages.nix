@@ -52,7 +52,6 @@
     rar
     tmux
     tldr
-    typora
     unzip
     yazi
     yt-dlp
