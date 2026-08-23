@@ -173,4 +173,17 @@ in
     categories = [ "System" "FileManager" "FileTools" "ConsoleOnly" ];
     mimeType = [ "inode/directory" ];
   };
+
+  # Overrides dev.noctalia.Noctalia.desktop from the noctalia package
+  xdg.desktopEntries."dev.noctalia.Noctalia" = {
+    name = "Noctalia Docs";
+    genericName = "Documentation";
+    comment = "Open Noctalia documentation";
+    exec = "xdg-open https://docs.noctalia.dev/";
+    icon = "noctalia";
+    terminal = false;
+    type = "Application";
+    categories = [ "Documentation" ];
+    startupNotify = false;
+  };
 }
