@@ -30,6 +30,7 @@
         tags = [ "postgres" ];
     }))
     gpu-screen-recorder
+    heroic
     sqlc
     stow
     imv
