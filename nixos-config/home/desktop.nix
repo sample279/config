@@ -176,14 +176,14 @@ in
 
   # Overrides dev.noctalia.Noctalia.desktop from the noctalia package
   xdg.desktopEntries."dev.noctalia.Noctalia" = {
-    name = "Noctalia Docs";
-    genericName = "Documentation";
-    comment = "Open Noctalia documentation";
+    name = "Noctalia";
+    genericName = "Website";
+    comment = "Open the Noctalia project homepage";
     exec = "xdg-open https://noctalia.dev";
     icon = "noctalia";
     terminal = false;
     type = "Application";
-    categories = [ "Documentation" ];
+    categories = [ "Network" ];
     startupNotify = false;
   };
 }
