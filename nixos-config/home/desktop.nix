@@ -179,7 +179,7 @@ in
     name = "Noctalia Docs";
     genericName = "Documentation";
     comment = "Open Noctalia documentation";
-    exec = "xdg-open https://docs.noctalia.dev/";
+    exec = "xdg-open https://noctalia.dev";
     icon = "noctalia";
     terminal = false;
     type = "Application";
