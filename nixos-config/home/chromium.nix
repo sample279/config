@@ -27,6 +27,7 @@ in
       (fetchCrx { id = "mpbjkejclgfgadiemmefgebjfooflfhl"; sha256 = "sha256-u2uOMy9VJ1BwEuxJRGJhYPbU2D8YKSEA+6j7hKtuF9w="; version = "3.4.0"; }) # Buster: Captcha Solver for Humans
       (fetchCrx { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; sha256 = "sha256-ncsb1tytQ4kt3AKP9l+YLfPtuhNammRF5PpxZx43qhM="; version = "4.9.129"; }) # Dark Reader
       (fetchCrx { id = "edibdbjcniadpccecjdfdjjppcpchdlm"; sha256 = "sha256-RrbNwwND3Sl8bTTZF5xeHMHuQEyOY7FU3vFY4TAQw30="; version = "1.1.9"; }) # I still don't care about cookies
+      (fetchCrx { id = "chklaanhfefbnpoihckbnefhakgolnmc"; sha256 = "sha256-NHvHQsvPRtT/B1vGQNE2TUZOTbPCvg2z+8sbllAEJcg="; version = "0.2.3"; }) # JSONVue
       (fetchCrx { id = "mmioliijnhnoblpgimnlajmefafdfilb"; sha256 = "sha256-eLB9vM9jqyY+EMP1h8654m/6CJiRN0XymHF2Hcu6V1Y="; version = "2.5.0"; }) # Shazam
       (fetchCrx { id = "icpgjfneehieebagbmdbhnlpiopdcmna"; sha256 = "sha256-ZphGiFw16UgGyTBP3rLOqz4sTtbKDtYS75gtr6XxEfY="; version = "3.1.6"; }) # New Tab Redirect
       (fetchCrx { id = "pkehgijcmpdhfbdbbnkijodmdjhbjlgp"; sha256 = "sha256-r7/6OKSQ1D/45WoTsKS0+95ch7BtU9kImNnn4vzQj0A="; version = "2026.6.16"; }) # Privacy Badger
