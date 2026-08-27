@@ -28,7 +28,6 @@
       ya = "yazi";
 
       # Editors & tools
-      nv = "nvim";
       op = "opencode";
       emacs = "emacsclient -c & disown";
       pg = "pgadmin4";

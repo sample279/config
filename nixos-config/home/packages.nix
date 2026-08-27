@@ -45,7 +45,6 @@
     mpv
     mpvpaper
     nautilus
-    neovim
     opencode
     proton-vpn
     protonplus
