@@ -45,6 +45,7 @@
     mpv
     mpvpaper
     nautilus
+    obsidian
     opencode
     proton-vpn
     protonplus
