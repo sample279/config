@@ -30,6 +30,7 @@
         tags = [ "postgres" ];
     }))
     gpu-screen-recorder
+    python314Packages.grip
     heroic
     sqlc
     stow
