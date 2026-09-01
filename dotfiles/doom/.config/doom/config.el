@@ -84,6 +84,7 @@
 
 (global-visual-line-mode 1)
 (add-to-list 'auto-mode-alist '("\\.kdl\\'" . kdl-mode))
+(add-hook 'markdown-mode-hook #'grip-mode)
 
 (after! treesit
   (add-to-list 'treesit-language-source-alist
