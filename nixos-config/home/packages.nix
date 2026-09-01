@@ -35,6 +35,7 @@
     sqlc
     stow
     imv
+    ispell
     jq
     kitty
     krita
