@@ -23,6 +23,7 @@
     fd
     ffmpeg-headless
     ffmpegthumbnailer
+    ghostty
     gnome-calculator
     go
     gopls
