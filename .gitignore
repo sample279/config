@@ -5,6 +5,7 @@ dotfiles/bat/.config/bat/themes/noctalia.tmTheme
 dotfiles/btop/.config/btop/themes/noctalia.theme
 dotfiles/cava/.config/cava/themes/noctalia
 dotfiles/doom/.config/doom/themes/noctalia-theme.el
+dotfiles/ghostty/.config/ghostty/themes/noctalia
 dotfiles/fastfetch/.config/fastfetch/themes/noctalia.jsonc
 dotfiles/kitty/.config/kitty/themes/noctalia.conf
 dotfiles/lazygit/.config/lazygit/themes/noctalia.yml
