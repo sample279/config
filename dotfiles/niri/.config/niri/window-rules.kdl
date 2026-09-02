@@ -29,14 +29,6 @@ window-rule {
     default-window-height { fixed 700; }
 }
 
-// Open btop as floating
-window-rule {
-    match app-id="^btop-float$"
-    open-floating true
-    default-column-width { fixed 1100; }
-    default-window-height { fixed 670; }
-}
-
 // Open calculator as floating
 window-rule {
   match app-id="org.gnome.Calculator" title="Calculator"
@@ -67,14 +59,6 @@ window-rule {
   open-floating true
   default-column-width { fixed 1100; }
   default-window-height { fixed 700; }
-}
-
-// Open yazi as floating
-window-rule {
-    match app-id="^yazi-float$"
-    open-floating true
-    default-column-width { fixed 1100; }
-    default-window-height { fixed 700; }
 }
 
 layer-rule {
