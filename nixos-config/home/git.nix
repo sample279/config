@@ -5,6 +5,7 @@
     enable = true;
 
     settings = {
+      core.editor = "emacsclient";
       user = {
         name = "sample279";
         email = "224307167+sample279@users.noreply.github.com";
