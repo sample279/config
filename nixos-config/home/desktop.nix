@@ -146,7 +146,7 @@ in
     genericName = "System Monitor";
     comment = "Resource monitor that shows usage and stats for processor, memory, disks, network and processes";
     icon = "btop";
-    exec = "kitty --app-id=btop-float -e btop";
+    exec = "ghostty -e btop";
     terminal = false;
     categories = [ "System" "Monitor" "ConsoleOnly" ];
   };
@@ -168,7 +168,7 @@ in
     name = "Yazi";
     comment = "Blazing fast terminal file manager written in Rust, based on async I/O";
     icon = "yazi";
-    exec = "kitty --app-id=yazi-float -e yazi %f";
+    exec = "ghostty -e yazi %f";
     terminal = false;
     categories = [ "System" "FileManager" "FileTools" "ConsoleOnly" ];
     mimeType = [ "inode/directory" ];

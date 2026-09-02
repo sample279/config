@@ -38,7 +38,6 @@
     imv
     ispell
     jq
-    kitty
     krita
     lazygit
     lazydocker

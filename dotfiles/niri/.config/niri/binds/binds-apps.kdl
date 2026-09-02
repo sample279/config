@@ -1,7 +1,7 @@
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Return hotkey-overlay-title="Open Terminal: Kitty" { spawn "kitty"; }
+    Mod+Return hotkey-overlay-title="Open Terminal: Ghostty" { spawn "ghostty"; }
     Mod+Space hotkey-overlay-title="Open Launcher: Noctalia" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+Alt+Space hotkey-overlay-title="Open Session: Noctalia" { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+S hotkey-overlay-title="Open Control-Center: Noctalia" { spawn-sh "noctalia msg panel-toggle control-center"; }
