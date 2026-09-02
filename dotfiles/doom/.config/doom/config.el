@@ -92,7 +92,7 @@
   (add-to-list 'treesit-language-source-alist
                '(kdl . ("https://github.com/tree-sitter-grammars/tree-sitter-kdl"))))
 
-(set-popup-rule! "^\\*doom:vterm-popup:" :size 1.0 :select t :quit nil :ttl nil)
+(set-popup-rule! "^\\*ghostel\\*$" :size 1.0 :select t :quit nil :ttl nil)
 
 (after! evil
   (setq evil-escape-key-sequence nil)
