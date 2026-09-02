@@ -12,7 +12,7 @@ Application configs managed with [GNU Stow](https://www.gnu.org/software/stow/).
 | `doom` | `~/.config/doom/` (Emacs/Doom user config + noctalia theme) |
 | `fastfetch` | `~/.config/fastfetch/` (config, noctalia theme) |
 | `htop` | `~/.config/htop/htoprc` |
-| `ghostty` | `~/.config/ghostty/` (terminal config, noctalia theme) |
+| `kitty` | `~/.config/kitty/` (terminal config, noctalia theme) |
 | `lazydocker` | `~/.config/lazydocker/config.yml` |
 | `lazygit` | `~/.config/lazygit/` (config, noctalia theme) |
 | `menus` | `~/.config/menus/` (application menus) |

@@ -16,7 +16,7 @@ Personal NixOS system configuration and dotfiles, managed in a single repository
 │   └── home/                  # Home Manager modules (shell, git, packages, ...)
 │
 └── dotfiles/                  # Stow packages, one dir per app
-    ├── ghostty/.config/ghostty/
+    ├── kitty/.config/kitty/
     ├── niri/.config/niri/
     ├── starship/.config/starship.toml
     └── ...                    # see dotfiles/README.md
