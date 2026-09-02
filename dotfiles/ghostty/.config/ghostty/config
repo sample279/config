@@ -3,19 +3,22 @@ theme = noctalia
 # Font
 font-family = "JetBrainsMono Nerd Font"
 font-style = Regular
-font-size = 9
+font-size = 11
 
 # Window
 window-theme = ghostty
+window-decoration = none
 window-padding-x = 14
-window-padding-y = 14
+window-padding-y = 5
 confirm-close-surface=false
 resize-overlay = never
 gtk-toolbar-style = flat
+tab-bar-position = bottom
 
 # Cursor styling
 cursor-style = "block"
 cursor-style-blink = false
+bell-features = no-audio
 
 # Cursor styling + SSH session terminfo
 # (all shell integration options must be passed together)
