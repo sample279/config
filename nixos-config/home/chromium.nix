@@ -20,6 +20,7 @@ in
       "--enable-features=UseOzonePlatform,WaylandWindowDecorations,WebUIDarkMode"
       "--force-dark-mode"
       "--gtk-version=4"
+      "--load-extension=$HOME/.cache/noctalia/ungoogled-chromium/theme"
     ];
 
     extensions = [
