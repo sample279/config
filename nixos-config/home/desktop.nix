@@ -121,7 +121,7 @@ in
     name = "Proton Mail";
     comment = "Secure, private email";
     exec = "chromium --profile-directory=Default --app=https://mail.proton.me";
-    icon = "protonmail";
+    icon = "proton-mail";
     terminal = false;
     categories = [ "Network" "Email" "Office" ];
     startupNotify = true;
@@ -134,7 +134,7 @@ in
     name = "Proton VPN";
     comment = "Proton VPN GUI client";
     exec = "protonvpn-app";
-    icon = "protonvpn";
+    icon = "protonvpn-logo";
     terminal = false;
     categories = [ "Network" ];
     settings = {
