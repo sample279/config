@@ -29,12 +29,12 @@ let
       hash = "sha256-3rk6+CjZExIr4mLNwHxcq2tWCajoLIhbfYQbc1+uFn4=";
     }
     {
-      name = "protonmail";
+      name = "proton-mail";
       url = "https://raw.githubusercontent.com/ente-io/ente/main/mobile/apps/auth/assets/custom-icons/icons/proton_mail.svg";
       hash = "sha256-cHJIZ/pJ3tLMFvB38xMV5F+JzQvErRD3BlQrIT9uvvo=";
     }
     {
-      name = "protonvpn";
+      name = "protonvpn-logo";
       url = "https://raw.githubusercontent.com/ente-io/ente/main/mobile/apps/auth/assets/custom-icons/icons/proton_vpn.svg";
       hash = "sha256-HHG1cS/pvrFgWHFDHV2WfXWqw+MAzXZk7pfD9OcXAnc=";
     }
