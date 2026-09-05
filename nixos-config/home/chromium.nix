@@ -17,8 +17,7 @@ in
 
     commandLineArgs = [
       "--ozone-platform=wayland"
-      "--enable-features=UseOzonePlatform,WaylandWindowDecorations,WebUIDarkMode"
-      "--force-dark-mode"
+      "--enable-features=UseOzonePlatform,WaylandWindowDecorations"
       "--gtk-version=4"
       "--load-extension=$HOME/.cache/noctalia/ungoogled-chromium/theme"
     ];
