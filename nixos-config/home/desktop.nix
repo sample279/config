@@ -1,6 +1,7 @@
 { pkgs, lib, ... }:
 
 let
+  enableCustomIcons = false;
   icons = [
     {
       name = "github";
@@ -40,12 +41,12 @@ let
   ];
 in
 {
-  xdg.dataFile = builtins.listToAttrs (map
+  xdg.dataFile = lib.mkIf enableCustomIcons (builtins.listToAttrs (map
     ({ name, url, hash }: {
       name = "icons/hicolor/256x256/apps/${name}.svg";
       value.source = pkgs.fetchurl { inherit url hash; };
     })
-    icons);
+    icons));
 
   xdg.desktopEntries.emacs = {
     name = "Emacs";
