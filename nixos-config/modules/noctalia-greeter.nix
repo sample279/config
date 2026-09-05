@@ -8,6 +8,8 @@
   programs.noctalia-greeter = {
     enable = true;
 
+    passwordless-sync-users = [ "sample" ];
+
     # Optional
     greeter-args = "";
 
