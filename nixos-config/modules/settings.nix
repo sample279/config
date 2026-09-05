@@ -21,6 +21,10 @@
   environment.sessionVariables = {
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
     NIXOS_OZONE_WL = "1";
+    XDG_CONFIG_HOME = "$HOME/.config";
+    XDG_DATA_HOME = "$HOME/.local/share";
+    XDG_STATE_HOME = "$HOME/.local/state";
+    XDG_CACHE_HOME = "$HOME/.cache";
   };
 
   programs.nix-ld.enable = true;
